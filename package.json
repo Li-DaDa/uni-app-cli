@@ -76,17 +76,30 @@
     "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-30720210122002",
     "@dcloudio/webpack-uni-mp-loader": "^2.0.0-30720210122002",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-30720210122002",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-plugin-typescript": "*",
     "@vue/cli-service": "^4.5.0",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.8",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "node-sass": "^5.0.0",
     "postcss-comment": "^2.0.0",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0",
     "typescript": "^3.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuex-class": "^0.3.2"
   },
   "browserslist": [
     "Android >= 4",
@@ -94,5 +107,10 @@
   ],
   "uni-app": {
     "scripts": {}
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "node script/verify-commit.js"
+    }
   }
 }
